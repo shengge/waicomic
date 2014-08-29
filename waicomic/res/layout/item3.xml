@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/s1"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/items_01"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/sj_03" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/items_02"
+            android:textSize="12.0dip"
+            android:textColor="#C0C0C0" />
+
+	    <TextView
+	        android:id="@+id/text4"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+	        android:layout_marginTop="5dp"
+	        android:background="@drawable/sj_07"
+	        android:gravity="center"
+	        android:clickable="true"
+	        android:focusable="false"
+	        android:text="@string/items_03" />
+	    
+    </LinearLayout>
+
+</LinearLayout>

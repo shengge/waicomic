@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:hint="@string/keep_02"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    	android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:hint="@string/keep_03"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    	android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:hint="@string/keep_04"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:layout_marginTop="10dp"
+    	android:textSize="20sp"
+        android:text="@string/keep_00" />
+
+</LinearLayout>

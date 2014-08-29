@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+		android:focusable="true"
+		android:focusableInTouchMode="true" 
+        android:background="@drawable/sj_01"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <EditText
+            android:id="@+id/stext"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/sj_05"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingBottom="2dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="45dp"
+            android:paddingTop="5dp"
+            android:text="@string/type_01"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/sj_06"
+            android:contentDescription="@string/app_name" />
+    </FrameLayout>
+
+     <ListView
+        android:id="@+id/alist1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+    <!--
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:textSize="20.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/works_00" />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/works_01" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/works_02" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/works_03" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/works_04" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/works_05" />
+        </LinearLayout>
+    </LinearLayout>
+   
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:textSize="20.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/theme_00" />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_01" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_02" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_03" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_04" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_05" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_06" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_07" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_07" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_08" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_09" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_10" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_11" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_12" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_13" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_14" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_15" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_16" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_17" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_18" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_19" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_20" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_21" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_22" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_23" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_24" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0dip"
+                android:layout_margin="5dp"
+                android:text="@string/theme_25" />
+        </LinearLayout>
+    </LinearLayout>
+	-->
+</LinearLayout>

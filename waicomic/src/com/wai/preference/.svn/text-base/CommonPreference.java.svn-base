@@ -1,0 +1,81 @@
+package preference;
+
+import android.content.SharedPreferences;
+import android.preference.PreferenceActivity;
+import framework.AppContext;
+
+public class CommonPreference {
+	private static final String PREF_FILE_NAME = "common_settings";
+	public static final String ACCOUNT = "account";
+	public static final String PASSWORD = "password";
+	public static final String NICKNAME = "nickname";
+	public static final String HEADPHOTO = "headphoto";
+	public static final String EMAIL = "email";
+	public static final String PUSH_CLIENTID = "push_clientid";
+	public static final String ID = "id";
+	
+	public static final String REMEMBER_PASSWORD = "remend_password";
+	public static final String VERSION_CODE = "version_code";
+	public static final String LAST_UPDATE_TIME = "last_update_time";
+	public static final String SHOW_STEALTH = "show_stealth";
+	public static final String SHOW_EMERGENCY_WINDOW = "show_emergency_window";
+	public static final String SPLASH_PIC_BEGIN = "splash_pic_begin";
+	public static final String SPLASH_PIC_END = "splash_pic_end";
+	public static final String SPLASH_PIC_URL = "splash_pic_url";
+	public static final String APP_PATH = "app_path";
+	public static final String APP_NAME = "app_name";
+	public static final String APP_SIZE = "app_size";
+	
+	public static String getUserId() {
+		return getStringValue(ID, "");
+	}
+	
+	public static String getStringValue(String keyWord, String defaultValue) {
+		SharedPreferences sp = AppContext.getApplication()
+				.getSharedPreferences(PREF_FILE_NAME,PreferenceActivity.MODE_PRIVATE);
+		return sp.getString(keyWord, defaultValue);
+	}
+	
+	public static void setStringValue(String keyWord, String value) {
+		SharedPreferences sp = AppContext.getApplication()
+				.getSharedPreferences(PREF_FILE_NAME,PreferenceActivity.MODE_PRIVATE);
+		sp.edit().putString(keyWord, value).commit();
+	}
+	
+	public static int getIntValue(String keyWord, int defaultValue) {
+		SharedPreferences sp = AppContext.getApplication()
+				.getSharedPreferences(PREF_FILE_NAME,PreferenceActivity.MODE_PRIVATE);
+		return sp.getInt(keyWord, defaultValue);
+	}
+	
+	public static void setIntValue(String keyWord, int value) {
+		SharedPreferences sp = AppContext.getApplication()
+				.getSharedPreferences(PREF_FILE_NAME,PreferenceActivity.MODE_PRIVATE);
+		sp.edit().putInt(keyWord, value).commit();
+	}
+	
+	public static boolean getBooleanValue(String keyWord, boolean defaultValue) {
+		SharedPreferences sp = AppContext.getApplication()
+				.getSharedPreferences(PREF_FILE_NAME,PreferenceActivity.MODE_PRIVATE);
+		return sp.getBoolean(keyWord, defaultValue);
+	}
+	
+	public static void setBooleanValue(String keyWord, boolean isCheck) {
+		SharedPreferences sp = AppContext.getApplication()
+				.getSharedPreferences(PREF_FILE_NAME,PreferenceActivity.MODE_PRIVATE);
+		sp.edit().putBoolean(keyWord, isCheck).commit();
+	}
+	
+
+	public static long getLongValue(String keyWord, long defaultValue) {
+		SharedPreferences sp = AppContext.getApplication()
+				.getSharedPreferences(PREF_FILE_NAME,PreferenceActivity.MODE_PRIVATE);
+		return sp.getLong(keyWord, defaultValue);
+	}
+	
+	public static void setLongValue(String keyWord, long value) {
+		SharedPreferences sp = AppContext.getApplication()
+				.getSharedPreferences(PREF_FILE_NAME,PreferenceActivity.MODE_PRIVATE);
+		sp.edit().putLong(keyWord, value).commit();
+	}
+}

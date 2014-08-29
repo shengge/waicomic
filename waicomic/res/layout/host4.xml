@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/sj_01" >
+
+        <TextView
+        	android:id="@+id/about_00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/about_00"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/about_01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/about_01"
+        android:textSize="20sp" />
+
+<!--
+    <TextView
+        android:id="@+id/about_03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:autoLink="web"
+        android:text="@string/about_03"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/about_04"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:autoLink="web"
+        android:text="@string/about_04"
+        android:textSize="14sp" />
+-->
+
+    <TextView
+        android:id="@+id/about_05"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:autoLink="web"
+        android:text="@string/about_05"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/about_06"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/about_06"
+        android:textSize="14sp" />
+
+<!--
+    <TextView
+        android:id="@+id/about_07"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/about_07"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/about_08"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/about_08"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/about_09"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/about_09"
+        android:textSize="14sp" />
+    
+    <TextView
+        android:id="@+id/about_10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/about_10"
+        android:textSize="14sp" />
+-->
+
+    <TextView
+        android:id="@+id/about_02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:autoLink="web"
+        android:text="@string/about_02"
+        android:textSize="14sp" />
+    
+</LinearLayout>
